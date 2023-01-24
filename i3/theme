@@ -12,8 +12,12 @@ client.unfocused #404040 #888888 #ffffff #333333 #333333
 # Focus follow mouse
 focus_follows_mouse yes
 
+default_border pixel 2
+hide_edge_borders none
+
 title_align center
 for_window [all] title_window_icon padding 10px
+for_window [all] border pixel 3px
 
 # Set background
 # To set a background image use 'feh ....'
