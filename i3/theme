@@ -9,15 +9,16 @@ font pango:monospace 10
 # window colors
 client.focused #9999cc #444466 #f0f0f0 #9999cc #9999cc
 client.unfocused #404040 #888888 #ffffff #333333 #333333
+
 # Focus follow mouse
 focus_follows_mouse yes
 
-default_border pixel 2
-hide_edge_borders none
+default_border normal 3
+# hide_edge_borders none
 
 title_align center
+for_window [all] border normal 3
 for_window [all] title_window_icon padding 10px
-for_window [all] border pixel 3px
 
 # Set background
 # To set a background image use 'feh ....'
