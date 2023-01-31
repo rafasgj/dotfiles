@@ -25,12 +25,11 @@ include ~/.config/i3/keysym
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex-autostart --autostart --environment i3
 
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
-
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# If USB/BT keyboard disconnects, or machine is put to sleep and the keyboard
+# gets a new id, 'setxkbmap' settings are lost (e.g. swapping ALT/WIN keys).
+# By wrapping 'i3lock' in a script allows the setting to be put in place again
+# without resorting to any system wide change.
+exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/.config/i3/screen_lock.sh -lock
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
