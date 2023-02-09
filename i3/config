@@ -25,6 +25,9 @@ include ~/.config/i3/keysym
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex-autostart --autostart --environment i3
 
+# Use lxpolkit to prompt for sudo password.
+exec --no-startup-id lxpolkit
+
 # If USB/BT keyboard disconnects, or machine is put to sleep and the keyboard
 # gets a new id, 'setxkbmap' settings are lost (e.g. swapping ALT/WIN keys).
 # By wrapping 'i3lock' in a script allows the setting to be put in place again
