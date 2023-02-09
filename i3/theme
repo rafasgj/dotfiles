@@ -14,10 +14,13 @@ client.unfocused #404040 #888888 #ffffff #333333 #333333
 focus_follows_mouse yes
 
 default_border normal 3
+default_floating_border normal 7
+
 # hide_edge_borders none
 
 title_align center
-for_window [all] border normal 3
+for_window [tiling] border normal 3
+for_window [floating] border normal 7
 for_window [all] title_window_icon padding 10px
 
 # Set background
