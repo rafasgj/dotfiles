@@ -16,6 +16,7 @@ set $terminal xfce4-terminal
 include ~/.config/i3/theme
 include ~/.config/i3/keysym
 
+include ~/.config/i3/local
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -45,10 +46,6 @@ bindsym XF86Display exec --no-startup-id ~Applications/display_autoorg.sh
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-
-# move tiling windows via drag & drop by left-clicking into the title bar,
-# or left-clicking anywhere into the window while holding the floating modifier.
-tiling_drag modifier titlebar
 
 # kill focused window
 bindsym $mod+Shift+q kill

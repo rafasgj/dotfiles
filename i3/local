@@ -1,0 +1,13 @@
+#
+# Local customizations.
+# If you are using these file, you might want to
+# add your personal customizations here.
+#
+
+for_window [class="Telegram"] floating enable
+for_window [class="gnome-calculator"] floating enable
+for_window [class="Virt-manager"] floating enable
+
+# Bluetooth GUI applets
+for_window [class="Blueberry.py"] floating enable
+for_window [class="Blueman-manager"] floating enable

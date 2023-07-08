@@ -10,17 +10,22 @@ font pango:monospace 10
 client.focused #9999cc #444466 #f0f0f0 #9999cc #9999cc
 client.unfocused #404040 #888888 #ffffff #333333 #333333
 
+# move tiling windows via drag & drop by left-clicking into the title bar,
+# or left-clicking anywhere into the window while holding the floating modifier.
+tiling_drag modifier titlebar
+
 # Focus follow mouse
 focus_follows_mouse yes
 
+# Define window borders
 default_border normal 3
-default_floating_border normal 7
-
+default_floating_border pixel 7
 # hide_edge_borders none
-
-title_align center
 for_window [tiling] border normal 3
-for_window [floating] border normal 7
+for_window [floating] border pixel 7
+
+# Set window title
+title_align center
 for_window [all] title_window_icon padding 10px
 
 # Set background
