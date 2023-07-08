@@ -23,9 +23,16 @@ then
 fi
 ```
 
+
 packages
 --------
 
 The `packages` file is a list of packages to be installed. Use
 `sudo xargs dnf -y install < packages`.
+
+
+createlinks.sh
+--------------
+
+Create directories and links to configuration files and utilities.
 
