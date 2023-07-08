@@ -23,3 +23,9 @@ then
 fi
 ```
 
+packages
+--------
+
+The `packages` file is a list of packages to be installed. Use
+`sudo xargs dnf -y install < packages`.
+
