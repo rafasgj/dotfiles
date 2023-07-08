@@ -1,0 +1,13 @@
+#!/bin/sh
+
+LINK="https://bugzilla.redhat.com"
+
+if [ "$1" = "-q" ]
+then
+	shift
+	search="$*"
+	[ -z "${search}" ] && read -p "Query: " search
+	exec firefox "${LINK}/buglist.cgi?quicksearch=${search}"
+else
+	exec firefox "${LINK}/show_bug.cgi?id=$1"
+fi
