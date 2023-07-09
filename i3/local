@@ -11,3 +11,7 @@ for_window [class="Virt-manager"] floating enable
 # Bluetooth GUI applets
 for_window [class="Blueberry.py"] floating enable
 for_window [class="Blueman-manager"] floating enable
+
+# DisplayCAL
+for_window [class="Displaycal"] floating enable
+for_window [class="Displaycal"] border pixel 0
