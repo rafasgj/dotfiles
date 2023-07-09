@@ -1,0 +1,25 @@
+#!/bin/sh
+
+die() {
+    >&2 echo -e "$*"
+    exit 1
+}
+
+tolower() {
+    echo -n "$*" | tr "[:upper:]" "[:lower:]"
+}
+
+[ $# -ne 1 ] && die "Launch Flatpak applications.\nusage: f APPNAME"
+
+to_run=$(tolower ${1})
+shift
+
+# Read configured applications
+applist=$(flatpak list --columns application | sed "s/\(.*[.]\)\([^.]*$\)/\2,\1\2/")
+
+echo "${applist}" | while IFS=, read -r -a array; do
+    if [ "$(tolower ${array[0]})" == "${to_run}" ]
+    then
+        exec flatpak run "${array[1]}" >/dev/null 2>&1 & disown
+    fi
+done
