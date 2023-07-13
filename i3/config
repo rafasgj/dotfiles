@@ -39,10 +39,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/.config/i3/screen_lock.
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# Setup multiple monitors - rafasgj
-#exec --no-startup-id xrandr --output eDP-1 --auto --below HDMI-1 --output DP-2 --left-of HDMI-1
+# Setup multiple monitors
 exec --no-startup-id ~/Applications/display_autoorg.sh
-bindsym XF86Display exec --no-startup-id ~/Applications/display_autoorg.sh
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
