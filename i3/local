@@ -15,3 +15,6 @@ for_window [class="Blueman-manager"] floating enable
 # DisplayCAL
 for_window [class="Displaycal"] floating enable
 for_window [class="Displaycal"] border pixel 0
+
+# audio config
+for_window [class="Pavucontrol"] floating enable
