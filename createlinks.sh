@@ -16,7 +16,7 @@ do
     [ -d "${dir}" ] || mkdir -p "${dir}"
 done
 
-ln -snf "${BASEDIR}/Applications/*" "${HOME}/Applications/"
+ln -snf "${BASEDIR}/Applications/"* "${HOME}/Applications/"
 
 for config in $(find ${CONFIGDIR} -type f | sed "s#${CONFIGDIR}##; /^ *$/d")
 do
