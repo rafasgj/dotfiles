@@ -3,7 +3,12 @@
 BASEDIR="$(realpath $(dirname $0))"
 CONFIGDIR="${BASEDIR}/config"
 
-echo ln -snf "${BASEDIR}/bashrc.d" "${HOME}/bashrc.d"
+if [ -d "${HOME}/.bashrc.d" ]
+then
+    ln -snf "${BASEDIR}/bashrc.d/*" "${HOME}/.bashrc.d"
+else
+    ln -snf "${BASEDIR}/bashrc.d" "${HOME}/.bashrc.d"
+fi
 
 directories=(
   "${HOME}/Applications"
