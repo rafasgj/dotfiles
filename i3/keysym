@@ -93,7 +93,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Screenshot
-bindsym $mod+Print exec xfce4-screenshooter -r -d 2
-bindsym $mod+Control+Print exec xfce4-screenshooter -w -d 2
-bindsym $mod+Shift+Print exec xfce4-screenshooter -f -d 2
+bindsym $mod+Print exec scrot '%Y-%m-%d-%H%M%S.png' -e 'mv $f ~/$${SCREENSHOT_DIR:-Pictures}' -d 2 -s
+bindsym $mod+Control+Print exec "%Y-%m-%d-%H%M%S.png" -e 'mv $f ~/$${SCREENSHOT_DIR:-Pictures}' -d 2 -b -s -f
+bindsym $mod+Shift+Print exec scrot "%Y-%m-%d-%H%M%S.png" -e 'mv $f ~/$${SCREENSHOT_DIR:-Pictures}' -d 2 -m
 
