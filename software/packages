@@ -1,13 +1,16 @@
-vim
+atool
 blueman
+evince
 expect
 flatpak
-scrot
-xsetroot
-lxpolkit
 htop
-atool
+lxpolkit
+scrot
+vim
+xsetroot
+
 # required for lxpolkit
 adwaita-gtk2-theme
+
 # review and change to lightweight alternatives
 gnome-calculator
