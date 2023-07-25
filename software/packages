@@ -1,6 +1,5 @@
 atool
 blueman
-evince
 expect
 flatpak
 htop
@@ -8,6 +7,10 @@ lxpolkit
 scrot
 vim
 xsetroot
+
+# PDF reader (atril req. more space, evince req. gnome-desktop3)
+atril
+# evince
 
 # required for lxpolkit
 adwaita-gtk2-theme
