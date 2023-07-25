@@ -2,3 +2,7 @@ podman
 virt-manager
 guestfs-tools
 nmap
+
+# Fedora pagckager
+fedpkg
+fedora-packager-kerberos
