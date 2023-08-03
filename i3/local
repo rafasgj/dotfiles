@@ -5,6 +5,8 @@
 #
 
 for_window [class="Telegram"] floating enable
+for_window [class="Telegram"] sticky enable
+
 for_window [class="gnome-calculator"] floating enable
 for_window [class="Virt-manager"] floating enable
 
