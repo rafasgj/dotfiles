@@ -66,6 +66,17 @@ mode "$mode_system" {
 }
 bindsym $mod+BackSpace mode "$mode_system"
 
+set $suspend_system Suspend? (Y)es (No)
+mode "$suspend_system" {
+    bindsym y exec --no-startup-id $i3lockwall && systemctl suspend, mode "default"
+    bindsym Y exec --no-startup-id $i3lockwall && systemctl suspend, mode "default"
+    # back to normal: Escape or n/N
+    bindsym n mode "default"
+    bindsym N mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Ctrl+Delete mode "$suspend_system"
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
     # These bindings trigger as soon as you enter the resize mode
