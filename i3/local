@@ -27,3 +27,8 @@ for_window [class="Pavucontrol"] floating enable
 # Multimedia viewer
 for_window [class="feh"] floating enable
 for_window [class="Atril"] floating enable
+
+# Android Studio
+for_window [title="Emulator"] floating enable
+for_window [title="Emulator"] border pixel 0
+
