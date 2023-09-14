@@ -105,6 +105,6 @@ bindsym $mod+r mode "resize"
 
 # Screenshot
 bindsym $mod+Print exec scrot '%Y-%m-%d-%H%M%S.png' -e 'mv $f ~/$${SCREENSHOT_DIR:-Pictures}' -d 2 -s
-bindsym $mod+Control+Print exec "%Y-%m-%d-%H%M%S.png" -e 'mv $f ~/$${SCREENSHOT_DIR:-Pictures}' -d 2 -b -s -f
+bindsym $mod+Control+Print exec scrot "%Y-%m-%d-%H%M%S.png" -e 'mv $f ~/$${SCREENSHOT_DIR:-Pictures}' -d 2 -b -s -f
 bindsym $mod+Shift+Print exec scrot "%Y-%m-%d-%H%M%S.png" -e 'mv $f ~/$${SCREENSHOT_DIR:-Pictures}' -d 2 -m
 
