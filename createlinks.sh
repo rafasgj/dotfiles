@@ -5,7 +5,10 @@ CONFIGDIR="${BASEDIR}/config"
 
 if [ -d "${HOME}/.bashrc.d" ]
 then
-    ln -snf "${BASEDIR}/bashrc.d/*" "${HOME}/.bashrc.d"
+    for script in $(ls -1 "${BASEDIR}/bashrc.d")
+    do
+        ln -snf "${BASEDIR}/bashrc.d/${script}" "${HOME}/.bashrc.d"
+    done
 else
     ln -snf "${BASEDIR}/bashrc.d" "${HOME}/.bashrc.d"
 fi
