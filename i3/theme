@@ -12,7 +12,8 @@ client.unfocused #404040 #888888 #ffffff #333333 #333333
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
-tiling_drag modifier titlebar
+# fails on sway
+# tiling_drag modifier titlebar
 
 # Focus follow mouse
 focus_follows_mouse yes
@@ -26,7 +27,8 @@ for_window [floating] border pixel 7
 
 # Set window title
 title_align center
-for_window [all] title_window_icon padding 10px
+# does not work on sway
+# for_window [all] title_window_icon padding 10px
 
 # Set background
 # To set a background image use 'feh ....'
