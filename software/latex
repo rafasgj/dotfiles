@@ -1,0 +1,5 @@
+pdflatex
+pdf2svg
+texlive
+texlive-standalone
+texlive-tikz
