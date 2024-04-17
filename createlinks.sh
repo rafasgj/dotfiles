@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASEDIR="$(realpath $(dirname $0))"
+BASEDIR="$(realpath $(dirname $0))
 CONFIGDIR="${BASEDIR}/config"
 
 if [ -d "${HOME}/.bashrc.d" ]
@@ -25,6 +25,7 @@ do
 done
 
 ln -snf "${BASEDIR}/Applications/"* "${HOME}/Applications/"
+ln -snf "${BASEDIR}/.vimrc" "vimrc"
 
 for config in $(find ${CONFIGDIR} -type f | sed "s#${CONFIGDIR}##; /^ *$/d")
 do
