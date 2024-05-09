@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASEDIR="$(realpath $(dirname $0))
+BASEDIR="$(realpath $(dirname $0))"
 CONFIGDIR="${BASEDIR}/config"
 
 if [ -d "${HOME}/.bashrc.d" ]
