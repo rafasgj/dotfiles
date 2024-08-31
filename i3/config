@@ -18,6 +18,9 @@ include ~/.config/i3/keysym
 
 include ~/.config/i3/local
 
+# This is sway-only configuration
+# include ~/.config/i3/sway
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -37,7 +40,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/.config/i3/screen_lock.
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+exec_always --no-startup-id nm-applet
 
 # Setup multiple monitors
 exec --no-startup-id ~/Applications/display_autoorg.sh

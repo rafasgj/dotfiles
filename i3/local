@@ -4,6 +4,8 @@
 # add your personal customizations here.
 #
 
+for_window [class="Evince"] floating enable
+
 for_window [class="Telegram"] floating enable
 for_window [class="Telegram"] sticky enable
 
@@ -32,3 +34,5 @@ for_window [class="Atril"] floating enable
 for_window [title="Emulator"] floating enable
 for_window [title="Emulator"] border pixel 0
 
+# Steam
+for_window [title="Steam"] floating enable
