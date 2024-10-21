@@ -15,8 +15,7 @@ fi
 
 directories=(
   "${HOME}/Applications"
-  "${HOME}/.config/xfce4/terminal"
-  "${HOME}/.config/gtk-3.0"
+  "${HOME}/.config"
 )
 
 for dir in ${directories[@]}
@@ -25,9 +24,9 @@ do
 done
 
 ln -snf "${BASEDIR}/Applications/"* "${HOME}/Applications/"
-ln -snf "${BASEDIR}/.vimrc" "vimrc"
+ln -snf "${BASEDIR}/vimrc" "${HOME}/.vimrc"
 
-for config in $(find ${CONFIGDIR} -type f | sed "s#${CONFIGDIR}##; /^ *$/d")
+for config in $(find ${CONFIGDIR} -maxdepth 1 | sed "s#${CONFIGDIR}##; /^ *$/d")
 do
     ln -snf "${CONFIGDIR}/${config}" "${HOME}/.config/${config}"
 done
