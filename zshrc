@@ -7,7 +7,7 @@ parse_git_branch() {
 
 setopt PROMPT_SUBST
 
-PROMPT='%F{white}%n@%m%f %F{cyan}$(parse_git_branch)%f%F{green}%1~%f \$'
+PROMPT='%F{white}%B%n@%m%f %F{cyan}$(parse_git_branch)%f%b%F{green}%1~%f\$ '
 
 alias virt-manager='virt-manager -c "qemu:///session" --no-fork &'
 
