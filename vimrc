@@ -1,3 +1,10 @@
+function! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+
 syntax on
 set number
 set ruler
@@ -7,6 +14,8 @@ set expandtab
 set smarttab
 
 set nomodeline
+
+autocmd BufWritePre * : call <SID>StripTrailingWhitespaces()
 
 autocmd FileType Makefile setlocal noexpandtab
 
