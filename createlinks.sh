@@ -24,7 +24,11 @@ do
 done
 
 ln -snf "${BASEDIR}/Applications/"* "${HOME}/Applications/"
-ln -snf "${BASEDIR}/vimrc" "${HOME}/.vimrc"
+
+for config in vimrc gitconfig
+do
+    ln -snf "${BASEDIR}/${config}" "${HOME}/.{config}"
+done
 
 for config in $(find ${CONFIGDIR} -maxdepth 1 | sed "s#${CONFIGDIR}##; /^ *$/d")
 do

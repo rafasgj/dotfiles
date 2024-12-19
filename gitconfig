@@ -1,0 +1,13 @@
+[user]
+	name = Rafael Guterres Jeffman
+	email = rafasgj@gmail.com
+[core]
+    sshCommand = "ssh -i ~/.ssh/rjeffman"
+	editor = /usr/bin/vim
+	askpass =
+[init]
+	defaultbranch = main
+[diff]
+	noprefix = false
+[alias]
+	cs = commit -s
