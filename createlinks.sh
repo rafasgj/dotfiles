@@ -25,9 +25,9 @@ done
 
 ln -snf "${BASEDIR}/Applications/"* "${HOME}/Applications/"
 
-for config in vimrc gitconfig
+for config in vimrc gitconfig zprofile zshrc
 do
-    ln -snf "${BASEDIR}/${config}" "${HOME}/.{config}"
+    ln -snf "${BASEDIR}/${config}" "${HOME}/.${config}"
 done
 
 for config in $(find ${CONFIGDIR} -maxdepth 1 | sed "s#${CONFIGDIR}##; /^ *$/d")
