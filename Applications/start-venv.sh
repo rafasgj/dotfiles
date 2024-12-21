@@ -7,7 +7,7 @@ then
   return 0
 fi
 
-python -m venv "/tmp/${VENV}" || return 1
+python3 -m venv "/tmp/${VENV}" || return 1
 . "/tmp/${VENV}/bin/activate" || return 1
 pip install --upgrade pip || return 1
 [ -z "$REQS" ] || pip install -r "${REQS}"
