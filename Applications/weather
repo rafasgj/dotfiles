@@ -1,0 +1,6 @@
+#!/bin/sh
+
+FORMAT=3
+CITY=${*:-${CITY:-"Porto_Alegre,SBPA"}}
+
+curl "https://wttr.in/{${CITY}}?format=${FORMAT}"
