@@ -7,6 +7,7 @@ lxpolkit
 scrot
 vim
 xsetroot
+wmctrl
 
 # PDF reader (atril req. more space, evince req. gnome-desktop3)
 atril
