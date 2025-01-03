@@ -1,6 +1,19 @@
 #!/bin/sh
 
-FORMAT=3
-CITY=${*:-${CITY:-"Porto_Alegre,SBPA"}}
+URL='https://wttr.in/{${CITY}}'
 
-curl "https://wttr.in/{${CITY}}?format=${FORMAT}"
+if [ "$1" == "-f" ]
+then
+    shift
+    default="Porto_Alegre"
+else
+    export FORMAT=${FORMAT:-4}
+    default="Porto_Alegre,SBPA"
+    URL='https://wttr.in/{${CITY}}?format=${FORMAT}'
+fi
+
+export CITY=${*:-${CITY:-${default}}}
+
+curl "$(echo ${URL} | envsubst)"
+
+# curl "${URL}"
