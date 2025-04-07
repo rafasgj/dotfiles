@@ -36,3 +36,6 @@ for_window [title="Emulator"] border pixel 0
 
 # Steam
 for_window [title="Steam"] floating enable
+
+# arandr
+for_window [title="Screen Layout Editor"] floating enable
