@@ -9,6 +9,9 @@ vim
 xsetroot
 wmctrl
 
+# audio
+pavucontrol
+
 # PDF reader (atril req. more space, evince req. gnome-desktop3)
 atril
 # evince
