@@ -1,3 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
-wmctrl -i -c "$(wmctrl -l | grep "$1" | cut -d " " -f 1)"
+[[ -z "$1" ]] && echo "usage: close-window WINDOW TITLE" && exit 1
+
+readarray -t window < <(wmctrl -l 2>/dev/null | grep "$*" | cut -d " " -f 1)
+echo "[${window[@]}]"
+[[ "${#window[@]}" -ge 1 ]] && wmctrl -i -c "${window[@]}"
