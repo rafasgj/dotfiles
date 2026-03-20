@@ -29,6 +29,7 @@ for_window [title="Volume Control"] floating enable
 # Multimedia viewer
 for_window [class="feh"] floating enable
 for_window [class="Atril"] floating enable
+for_window [class="Totem"] floating enable
 
 # Android Studio
 for_window [title="Emulator"] floating enable
@@ -39,3 +40,7 @@ for_window [title="Steam"] floating enable
 
 # arandr
 for_window [title="Screen Layout Editor"] floating enable
+
+# DisplayCAL
+for_window [class="displaycal"] floating enable
+for_window [class="displaycal"] border pixel 0
