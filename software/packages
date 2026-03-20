@@ -9,6 +9,9 @@ vim
 xsetroot
 wmctrl
 
+# Terminal
+alacritty
+
 # audio
 pavucontrol
 
@@ -21,3 +24,13 @@ adwaita-gtk2-theme
 
 # review and change to lightweight alternatives
 gnome-calculator
+
+# mutt
+mutt
+
+# terminal recorder
+vhs
+
+# used by vhs
+ttyd
+ffmpeg
