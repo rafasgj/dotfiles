@@ -6,3 +6,11 @@ nmap
 # Fedora pagckager
 fedpkg
 fedora-packager-kerberos
+
+# go
+golang
+
+# rust
+rust
+clippy
+rustfmt
