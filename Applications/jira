@@ -1,4 +1,5 @@
 #!/bin/sh
 
+JIRA_URL="${JIRA_URL:-"https://redhat.atlassian.net"}"
 
-exec ${BROWSER:-firefox} "https://issues.redhat.com/browse/$(echo ${1} | tr "[:lower:]" "[:upper:]")"
+exec ${BROWSER:-firefox} "${JIRA_URL}/browse/$(echo ${1} | tr "[:lower:]" "[:upper:]")"
