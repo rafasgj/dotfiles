@@ -2,6 +2,11 @@
 
 [window]
 dimensions = { columns = 80, lines = 24 }
+title = "Terminal"
+dynamic_title = true
+
+[env]
+TERM = "xterm-256color"
 
 [bell]
 duration = 0
@@ -10,7 +15,7 @@ duration = 0
 style = { shape = "Block", blinking = "Off" }
 
 [font]
-size = 12.0
+size = 12.5
 
 [colors.primary]
 background = "#13383D"
