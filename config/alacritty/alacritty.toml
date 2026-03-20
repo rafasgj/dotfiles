@@ -1,0 +1,37 @@
+# Alacritty configuration converted from xfce4-terminal
+
+[window]
+dimensions = { columns = 80, lines = 24 }
+
+[bell]
+duration = 0
+
+[cursor]
+style = { shape = "Block", blinking = "Off" }
+
+[font]
+size = 12.0
+
+[colors.primary]
+background = "#13383D"
+foreground = "#ffffff"
+
+[colors.normal]
+black   = "#000000"
+red     = "#ab1a1a"
+green   = "#55ff55"
+yellow  = "#aa5500"
+blue    = "#4488ff"
+magenta = "#ff55ff"
+cyan    = "#55ffff"
+white   = "#aaaaaa"
+
+[colors.bright]
+black   = "#555555"
+red     = "#ff5555"
+green   = "#55ff55"
+yellow  = "#ffff55"
+blue    = "#4b4bf6"
+magenta = "#ff55ff"
+cyan    = "#55ffff"
+white   = "#ffffff"
