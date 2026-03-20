@@ -1,0 +1,28 @@
+#!/bin/bash
+
+usage() {
+  cat << EOF
+usage: slowout [delay_seconds]
+
+Reads from stdin line by line, printing each line with a
+configurable delay between them. Default delay is 1 second
+
+Arguments:
+
+dlay_seconds      A float number of seconds (e.g. 0.25)
+EOF
+}
+
+
+if [[ " -h " =~ "$* " ]]
+then
+    usage
+    exit 0
+fi
+
+DELAY=${1:-1}
+
+while IFS= read -r line; do
+    echo "$line"
+    sleep "$DELAY"
+done
