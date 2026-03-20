@@ -34,3 +34,6 @@ vhs
 # used by vhs
 ttyd
 ffmpeg
+
+# tools
+faketime
