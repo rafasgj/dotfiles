@@ -22,3 +22,5 @@ autocmd FileType Makefile setlocal noexpandtab
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+
+autocmd BufNewFile,BufRead *.context set syntax=markdown
