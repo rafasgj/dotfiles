@@ -4,6 +4,8 @@
 dimensions = { columns = 80, lines = 24 }
 title = "Terminal"
 dynamic_title = true
+padding.x = 5
+padding.y = 2
 
 [env]
 TERM = "xterm-256color"
